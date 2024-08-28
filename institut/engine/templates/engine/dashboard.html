@@ -1,0 +1,270 @@
+{%extends "engine/index.html"%}
+
+{%load static%}
+
+{%block content%}
+<header>
+    <section id="hero">
+        <div class="container text-center">
+            <div class="row ">
+                <div class="col-md-7 col-sm-12  text-white">
+                    <h6>HOS GELDINIZ!</h6>
+                    <h1>TURKMENISTANYN TELEKOMMUNIKASIYALAR WE INFORMATIKA INSTITUTY</h1>
+
+                    <form
+                        action="https://en.wikipedia.org/wiki/Institute_of_Telecommunications_and_Informatics_of_Turkmenistan">
+                        <button type="submit" class="btn btn-light px-5 py-2 primary-btn">
+                            Wikipedia
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+    <section class="section-1">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="pray">
+                        <img src="{%static 'assets/img/informatika_instituty.jpg'%}" alt="Pray" class="" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="panel text-left">
+                        <h1>Bilim ulgamymz indiki nesle ylham beryar.</h1>
+                        <p class="pt-4">
+                            2019-njy ýylyň 12-nji iýunynda Hormatly Prezidentimiz “Türkmenistanyň Telekommunikasiýalar
+                            we informatika
+                            institutyny döretmek hakyndaky” Permana gol çekdi. Täze IT ýokary okuw mekdebi ýurdumyzyň
+                            ykdysadyýetiniň
+                            dürli pudaklaryny sanlylaşdyrmak üçin programmalary işläp taýýarlaýan we sanly enjamlar
+                            bilen üpjünçilik
+                            merkezi hökmünde gysga döwürde guwandyryjy netijeleri gazandy. Häzirki döwürde sanly
+                            tehnologiýalar
+                            durmuşymyza giňden ornaşýar.
+                        </p>
+                        <form action="{%url 'engine:about'%}">
+                            <button type="submit" class="btn btn-light px-5 py-2 primary-btn">Ginisleyin</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2 container-fluid p-0">
+        <div class="cover">
+            <div class="overlay"></div>
+            <div class="content text-center">
+                <h1>Biz bilen habarlasyn</h1>
+
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+                <div class="rect">
+                    <i class="fas fa-book-reader" style="font-size: 28px;color:tomato"></i>
+                    <h1>7</h1>
+                    <p>FAKULTET</p>
+                </div>
+                <div class="rect">
+                    <i class="fas fa-user-graduate" style="font-size:28px;color:tomato"></i>
+                    <h1>21</h1>
+                    <p>HÜNAR</p>
+                </div>
+                <div class="rect">
+                    <i class="fas fa-user-tie" style="font-size: 28px;color:tomato"></i>
+                    <h1>209</h1>
+                    <p>MUGALLYM</p>
+                </div>
+                <div class="rect">
+                    <i class="fas fa-graduation-cap" style="font-size: 28px;color:tomato"></i>
+                    <h1>5399</h1>
+                    <p>TALYP</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="purchase text-center">
+            <h1>Peýdaly Tazelikler</h1>
+
+            <div class="cards">
+                <div class="d-flex flex-row justify-content-center flex-wrap">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="title">
+                                <h5 class="card-title">YAS ALYMLAR GENESI</h5>
+
+
+                            </div>
+                            <p class="card-text">
+                                <i class="fas fa-search" style="font-size: 45px;color:red"></i>
+                            </p>
+                            <div class="pricing">
+                                <h2>Institutymyzyň içindäki Ýaş alymlar gurnagynyň ylmy işleri, innowasion
+                                    täzeçillikleri barada gyzyklan.</h2>
+                                <a href="{%url 'engine:yaglar'%}"
+                                    class="btn btn-dark px-5 py-2 primary-btn mb-5">Ginisleyin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="title">
+                                <h5 class="card-title">TAZELIKLER</h5>
+                            </div>
+                            <p class="card-text">
+                                <i class="fas fa-newspaper" style="font-size: 45px;color: red;"></i>
+                            </p>
+                            <div class="pricing">
+                                <h2>Ýurdumyzda hem-de dünýäde bolup geçýän täzeliklerden, täze tehnologiýalardan
+                                    habardar bolup bilersiňiz.</h2>
+                                <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Ginisleyin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="title">
+                                <h5 class="card-title">BASLESIKLER</h5>
+                            </div>
+                            <p class="card-text">
+                                <i class="fas fa-file-contract" style="font-size: 45px;color: red;"></i>
+                            </p>
+                            <div class="pricing">
+                                <h2>Institutymyzda geçirilýän ýaryşlardan, bäsleşiklerden guramaçalyk çärelerinden
+                                    habardar bolup bilersiňiz.</h2>
+                                <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Ginisleyin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 4 -->
+    <section class="section-4">
+        <div class="container text-center">
+            <h1 class="text-dark"> Institutymyzdaky Hünärler</h1>
+        </div>
+        <div class="team row ">
+            <div class="col-md-4 col-12 text-center">
+                <div class="card mr-2 d-inline-block shadow-lg">
+                    <div class="card-img-top">
+                        <img src="{%static 'assets/img/4.png'%}" class="img-fluid border-radius p-4" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Amaly Informatika</h3>
+                        <p class="card-text">
+                            “Amaly informatika” taýýarlygyň ugry boýunça bakalawr
+                            telekommunikasiýa pudagynda önümçilik-ykdysady,
+                            guramaçylyk-dolandyryş, ykdysadyýet, maliýe we buhgalter
+                            hasaby ugrunda maglumat ulgamlary döretmek, ornaşdyrmak,
+                            maglumat ulgamlarynyň kömegi bilen ykdysadyýetiň anyk
+                            sektorynda maglumat, maddy we pul akymlaryny dolandyrmak
+                            we wezipeleýin meseleleri çözmek işlerini ýerine ýetirmek
+                            üçin taýýarlanylýar.
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Doly Oka</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <div class="card mr-2 d-inline-block shadow">
+                                <div class="card-img-top">
+                                    <img src="{%static 'assets/img/3.png'%}" class="img-fluid rounded-circle w-50 p-4"
+                                        alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Hereketli obýektler bilen aragatnaşyk serişdeleri</h3>
+                                    <p class="card-text">
+                                        “Hereketli obýektler bilen aragatnaşyk serişdeleri”
+                                        hünäri boýunça hereketli radioaragatnaşyk serişdelerinden
+                                        baş çykarýan, hereketli radioaragatnaşyk ulgamlarynyň
+                                        funksional bloklarynyň enjamlaryny gurnap, sazlap we
+                                        synagdan geçirip, hereketli radioaragatnaşyk ulgamlaryny
+                                        we torlaryny taslap, şeýle radioulgamlarda ýüze çykýan
+                                        meseleleri başarnykly çözüp bilýän inženerler taýýarlanylýar.
+                                    </p>
+                                    <a href="#" class="text-secondary text-decoration-none">Doly Oka</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card  d-inline-block mr-2 shadow">
+                                <div class="card-img-top">
+                                    <img src="{%static 'assets/img/5.png'%}" class="img-fluid rounded-circle w-50 p-4"
+                                        alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Maglumat howpsuzlygy</h3>
+                                    <p class="card-text">
+                                        Şu kär häsiýetnamasy Türkmenistanyň ýokary
+                                        okuw mekdeplerinde „Maglumat howpsuzlygy” hünäri
+                                        boýunça taýýarlanylýan inženerleriň wezipelerini
+                                        hem-de olaryň käri boýunça durmuşa geçirmegiň
+                                        şertlerine bolan umumy talaplary kesgitleýär.
+                                        Kär häsiýetnamanyň talaplaryny „Maglumat howpsuzlygy”
+                                        hünäri boýunça okaýan talyplar, okadýan mugallymlar we okuw tertibini üpjün
+                                        edýän bölümleriň hünärmenleri doly berjaý etmeli.
+                                    </p>
+                                    <a href="#" class="text-secondary text-decoration-none">Doly Oka</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card  d-inline-block mr-2 shadow">
+                                <div class="card-img-top">
+                                    <img src="{%static 'assets/img/6.png'%}" class="img-fluid rounded-circle w-50 p-4"
+                                        alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Hasaplaýyş torlarynyň programma üpjünçiligi</h3>
+                                    <p class="card-text">
+                                        Şu kär häsiýetnamasy Türkmenistanyň ýokary okuw
+                                        mekdeplerinde „Hasaplaýyş torlarynyň programma
+                                        üpjünçiligi” hünäri boýunça inžener-programmistini taýýarlamaklygyň wezipelerini
+                                        hem-de olaryň käri boýunça durmuşa geçirmegiň şertlerine bolan umumy talaplary
+                                        kesgitleýär.Kär häsiýetnamanyň talaplaryny „Hasaplaýyş torlarynyň programma
+                                        üpjünçiligi” hünäri boýunça okaýan talyplar, okadýan mugallymlar we okuw
+                                        tertibini üpjün edýän bölümleriň hünärmenleri doly berjaý etmeli.
+                                    </p>
+                                    <a href="#" class="text-secondary text-decoration-none">Doly Oka</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+                <div class="card mr-2 d-inline-block shadow-lg">
+                    <div class="card-img-top">
+                        <img src="{%static 'assets/img/7.png'%}" class="img-fluid border-radius p-4" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Kärhananyň ykdysadyýeti we dolandyrylyşy</h3>
+                        <p class="card-text">
+                            Şu kär häsiýetnamasy Türkmenistanyň ýokary okuw mekdeplerinde “Kärhananyň ykdysadyýeti we
+                            dolandyrylyşy” hünäri boýunça inžener-ykdysatçyny taýýarlamaklygyň wezipelerini hem-de
+                            olaryň käri boýunça edilmeli talaplary kesgitleýär.Kär häsiýetnamasy hünärmenleriň
+                            taýýarlanylyşyny meýilnamalaşdyrmakda, taýýarlanylmaly hünärmenleriň sanyny çaklamakda,
+                            hünärleriň ýurdumyz üçin zerur düzümini esaslandyrmakda, uçurymlary işe ýollamakda we olaryň
+                            öz kärleri boýunça işleýändiklerini öwrenmekde ulanylýar.
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Doly Oka</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+{%endblock%}

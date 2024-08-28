@@ -1,0 +1,50 @@
+{%extends "engine/index.html"%}
+
+{%load static%}
+
+{%block content%}
+<header>
+    <section id="hero">
+        <div class="container text-left">
+            <div class="row">
+                <div class="col-md-7 col-sm-12  text-white">
+                    <h1>Täzelikler</h1>
+                </div>
+            </div>
+        </div>
+    </section> 
+</header>
+<div class="container">
+    <!-- <div class="text-right ">
+        <form action="{% url 'engine:add_post' %}">
+            <button type="submit" class="btn btn-secondary">Tazelik gos</button>
+        </form>
+    </div>
+    <br /><br />
+    <div class="text-right ">
+        <form action="{% url 'engine:add_category' %}">
+            <button type="submit" class="btn btn-secondary">Kategoriya gos</button>
+        </form>
+    </div> -->
+    <h1>Post</h1>
+
+    <ul>
+        {% for post in object_list %}
+        <div class="card">
+            <li><a href="{%url 'engine:article-detail' post.pk %}">{{ post.title }}</a>
+                -<a href="{% url 'engine:category' post.category|slugify %}"> {{ post.category }}</a>
+                - {{ post.author }}
+                - {{post.post_date }}
+                <a href="{% url 'engine:update_post' post.pk %}">(Edit)</a>
+                <a href="{% url 'engine:delete_post' post.pk %}">(Delete)</a>
+                <br />
+                {{ post.body|slice:":200"|safe }}
+            </li>
+        </div>
+        {%endfor%}
+    </ul>
+
+
+</div>
+
+{%endblock%}

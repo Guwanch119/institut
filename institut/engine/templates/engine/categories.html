@@ -1,0 +1,29 @@
+{%extends "engine/index.html"%}
+
+{%load static%}
+
+{%block content%}
+
+{% if category_posts %}
+
+    <h1> {{ cats }} </h1>
+
+    <ul>
+    {% for post in category_posts %}
+        <li><a href="{%url 'engine:article-detail' post.pk %}">{{ post.title }}</a>
+            
+            - {{ post.author }}
+            - {{post.post_date }}
+            <a href="{% url 'engine:update_post' post.pk %}">(Edit)</a>
+            <a href="{% url 'engine:delete_post' post.pk %}">(Delete)</a>
+            <br />
+            {{ post.body|slice:":100"|safe }}
+        </li>
+    {% endfor %}
+    </ul>
+
+{% else %}
+    <h2>Sorry this page does not exist... </h2>
+{% endif %}
+
+{%endblock%}

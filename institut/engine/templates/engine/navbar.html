@@ -1,0 +1,85 @@
+{%load static%}
+<div class="text-center">
+  <a href="https://timeshighereducation.com/world-university-rankings/2022/world-ranking#!/page/0/length/25/name/Turkmenistan/sort_by/rank/sort_order/asc/cols/stats">
+    <img src="{% static 'assets/img/rank1.png'%}">
+  </a>
+  <a href="https://greenmetric.ui.ac.id/rankings/overall-rankings-2021/itit.edu.tm">
+    <img src="{% static 'assets/img/rank2.png'%}">
+  </a>
+  <a href="https://www.timeshighereducation.com/world-university-rankings/institute-telecommunications-and-informatics-turkmenistan-0">
+    <img src="{% static 'assets/img/rank5.png'%}">
+  </a>
+</div>
+
+<div class="container-fluid p-0">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-book-reader fa-2x mx-3"></i>TTweII</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-align-right text-light"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="mr-auto"></div>
+      <ul class="navbar-nav">
+        <form action="{% url 'engine:search_blogs' %}" method="GET">
+          {% csrf_token %}
+          <label for="search">Gözleg:</label>
+          <input type="text" id="search" name="q" placeholder="Gözleg sözini giriziň">
+          <button type="submit">Gözleg</button>
+        </form>
+        <li class="nav-item active">
+          <a class="nav-link" href="{%url 'engine:index'%}">BAS SAHYPA
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'engine:about'%}">BIZ BARADA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'engine:tazelik'%}">TAZELIKLER</a>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown">
+            <a href="#" class="nav-link">YLYM</a>
+            <div class="dropdown-content">
+              <a href="{%url 'engine:yaglar'%}">YAS ALYMLAR GENESI</a>
+              <a href="https://it.net.tm">SANLY COZGIT IT MEYDANCA</a>
+              <a href="{%url 'engine:aspirantura'%}">ASPIRANTURA</a>
+              <a href="{% url 'engine:maslahat' %}">YLYM-AMALY MASLAHATLAR</a>
+              <a href="{% url 'engine:reyting' %}">REYTING</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a href="#" class="nav-link">FAKULTET</a>
+            <div class="dropdown-content">
+              {%for f in faculties%}
+              <a href="{%url 'engine:faculties' ID=f.id %}">{{f.title}}</a>
+              {%endfor%}
+              <!-- <a href="#">Hunar derejesini yokarlandyrma fakulteti</a>
+                <a href="#">Maglumat tehnologiyalary we programmirleme fakulteti</a>
+                <a href="#">Maglumat ulgamlarynyn howpsuzlygy fakulteti</a>
+                <a href="#">Onumcilik Proseslerini Awtomatlasdyrma fakulteti</a>
+                <a href="#">Sanly Ykdysadyyet we dolandyrys fakulteti</a>
+                <a href="#">Telekommunikasiyalar fakulteti</a> -->
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown">
+            <a href="#" class="nav-link">DALASGARLER UCIN</a>
+            <div class="dropdown-content">
+              <a href="{% url 'engine:hunarmen' %}">Hunarmen</a>
+              <a href="{% url 'engine:bakalawr' %}">Bakalawr</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'engine:habarlasmak' %}">HABARLASMAK</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,26 @@
+{%extends "engine/index.html"%}
+
+{%load static%}
+
+{%block content%}
+
+
+<br />
+<div class="container">
+    <h1>{{ post.title }}</h1>
+    <small>By:{{ post.author }}- {{ post.post_date }}
+        <a href="{% url 'engine:update_post' post.pk %}">(Edit)</a>
+        <a href="{% url 'engine:delete_post' post.pk %}">(Delete)</a>   
+     </small><br />
+    <hr>
+    <br />
+    {{ post.body|safe }}
+
+    <br /><br />
+    <form action="{% url 'engine:tazelik' %}">
+        <button type="submit" class="btn btn-secondary">Back</button>
+    </form>
+
+</div>
+
+{%endblock%}

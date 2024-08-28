@@ -1,0 +1,29 @@
+{%extends "engine/index.html"%}
+
+{%load static%}
+
+{%block content%}
+<header>
+    <section id="hero">
+        <div class="container text-left">
+            <div class="row">
+                <div class="col-md-7 col-sm-12  text-white">
+                    <h1>{{faculty}}</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="container">
+
+    <main>
+        <div class="container">
+
+
+            {{ faculty.body| safe }}
+
+        </div>
+
+    </main>
+
+    {%endblock%}

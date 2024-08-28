@@ -1,0 +1,190 @@
+{%extends "engine/index.html"%}
+
+{%load static%}
+
+{%block content%}
+<header>
+    <section id="hero">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-7 col-sm-12  text-white">
+                    <h1>ÝAŞ ALYMLAR GEŇEŞI</h1>
+
+
+                    <!-- <form
+                    action="https://en.wikipedia.org/wiki/Institute_of_Telecommunications_and_Informatics_of_Turkmenistan">
+                    <button type="submit" class="btn btn-light px-5 py-2 primary-btn">
+                        Wikipedia
+                    </button>
+                </form> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+
+
+
+    <div class="purchase text-center">
+        <h1>Bizin ugurlarymyz</h1>
+        <p>
+            Yas alymlar genesinin agzalarynyn alyp baryan taslamalarynyn ugurlary
+        </p>
+        <div class="cards">
+            <div class="d-flex flex-row justify-content-center flex-wrap">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="title">
+                            <h5 class="card-title">Programmirleme</h5>
+                        </div>
+                        <p class="card-text">
+                            <i class="fas fa-code" style="font-size: 45px;color:red"></i>
+                        </p>
+                        <div class="pricing">
+                            <h3>Programmirleme bolumlerinde talyplar java,php,laravel,android studio,C# dillerini
+                                ozlesdiryaler.Yas alymlar oz basarnyklaryny kompyuter kodlaryna geciryarler.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="title">
+                            <h5 class="card-title">Web-programmirleme</h5>
+                        </div>
+                        <p class="card-text">
+                            <i class="fa fa-address-card" style="font-size: 45px;color: red;"></i>
+                        </p>
+                        <div class="pricing">
+                            <h3>Ýaş alymlar web-programmirlemede Html, Css, Javascript, NodeJs, Laravel dilleri bilen
+                                web-programmirleme derejelerini ýokarlandyrýarlar.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="title">
+                            <h5 class="card-title">Dizayn</h5>
+                        </div>
+                        <p class="card-text">
+                            <i class="fas fa-paint-brush" style="font-size: 45px;color: red;"></i>
+                        </p>
+                        <div class="pricing">
+                            <h3>Dizaýn bölüminde Adobe programmalary bilen işlenilýär. Talyplaryň nazaryýetde alan
+                                bilimleri önümçilik tejribeliginde ornaşdyrylýar.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="title">
+                            <h5 class="card-title">Elektronika</h5>
+                        </div>
+                        <p class="card-text">
+                            <i class="fas fa-microchip" style="font-size: 45px;color: red;"></i>
+                        </p>
+                        <div class="pricing">
+                            <h3>Ýaş alymlarda robot tehnika bölümimiz hem hereket edýär. Ýaş nesliň döredijiligi
+                                institutymyzda robot tehnikasynda ösen derejelerini hem görkezer.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section-4">
+        <div class="container text-center">
+            <h1 class="text-dark">Yas Alymlaryn eden Taslamalary</h1>
+        </div>
+        <div class="team row ">
+            <div class="col-md-4 col-12 text-center">
+                <div class="card mr-2 d-inline-block shadow-lg">
+                    <div class="card-img-top">
+                        <img src="{%static 'assets/img/it.jpg'%}" class="img-fluid border-radius p-4" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ylmy döredijilik üçin innowasion meýdança</h3>
+                        <p class="card-text">
+                            Birnäçe wagt mundan öň gazetimizde
+                            Arkadagymyz Gurbanguly Berdimuhamedowyň Aşgabatda
+                            ilkinji içerki IT meýdançanyň döredilmegi bilen
+                            baglanyşykly ýene-de bir işjeň başlangyçlarynyň
+                            üstünlikli durmuşa geçirilendi...
+                        </p>
+                        <a href="https://itit.edu.tm/yagnews/11" class="text-secondary text-decoration-none">Doly
+                            Oka</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <div class="card mr-2 d-inline-block shadow">
+                                <div class="card-img-top">
+                                    <img src="{%static 'assets/img/home.png'%}"
+                                        class="img-fluid rounded-circle w-50 p-4" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Akylly öý</h3>
+                                    <p class="card-text">
+                                        “Ýaş alymlar geňeşinde” ses buýruklary arkaly
+                                        dolandyrylýan “Akylly öý” ulgamy işlenip düzüldi.
+                                        Bu ulgam öz ulanyjysyna internet ulgamyndan peýdalanyp
+                                        daş aralykdan öz öýüni ýagny öýdäki elektrik enjamlaryny
+                                        uzak aralykdan dolandyrmaga mümkinçilik berýär.
+                                    </p>
+                                    <a href="#" class="text-secondary text-decoration-none">Doly Oka</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card  d-inline-block mr-2 shadow">
+                                <div class="card-img-top">
+                                    <img src="{%static 'assets/img/network.png'%}"
+                                        class="img-fluid rounded-circle w-50 p-4" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">EduBox - Sanly Bilim Tory</h3>
+                                    <p class="card-text">
+                                        Taslama esasan iki bölümden, ýagny
+                                        Sanly Bilim Ulgamyndan we Bilim Portalyndan
+                                        ybaratdyr. Sanly Bilim Ulgamy her mekdebe
+                                        aýratyn gurnalyp, okuwyň gidişini dolandyrmak,
+                                        ýagny okuwçynyň gündeligi, mugallymyň žurn...
+                                    </p>
+                                    <a href="#" class="text-secondary text-decoration-none">Doly Oka</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+                <div class="card mr-2 d-inline-block shadow-lg">
+                    <div class="card-img-top">
+                        <img src="{%static 'assets/img/gazet.png'%}" class="img-fluid border-radius p-4" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">«BIZNES REKLAMA» gazeti indi elektaron gör­nüş­de</h3>
+                        <p class="card-text">
+                            Köpimiz, megerem, «Biznes reklama» gazetiniň
+                            web-saýtynyň işläp başlanyndan habarly hem däldiris.
+                            Institutyň maglumat tehnologiýalary we awtomatlaşdyrma
+                            fakultetiniň 1-nji ýyl talyby Akgözel Gurbangulyýewa bu t...
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Doly Oka</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+{%endblock%}
